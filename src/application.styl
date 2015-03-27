@@ -1,0 +1,72 @@
+@import "css/html5-doctor-reset-stylesheet.css"
+
+$width = 1024px
+$height = 768px
+
+html, body, .container, svg, .bg, .splash, .game, .result-page
+  font-family 'Lato-Regular'
+  font-size 36px
+  width $width
+  height $height
+  user-select none
+  overflow hidden
+
+.container
+  overflow hidden
+
+.splash
+  position absolute
+  top 0
+  left 0
+.game
+  position absolute
+  top $height
+.splash, .game
+  transition top 1s
+
+.bg
+  position absolute
+  top 0
+  left 0
+  width $width
+  img
+    width 100%
+img.sprite
+  position absolute
+
+svg, .playground
+  position absolute
+  top 238px
+  left 0
+  width 858px
+  height 440px
+  z-index 1
+.score
+  position absolute
+  top 207px
+  width 230px
+  text-align right
+  font-size 22px
+.score-ecolo
+  left 535px
+.score-fuel
+  left 93px
+.bubble
+  fill #192135
+  opacity 0.2
+
+.result-page
+  img
+    position absolute
+  position absolute
+  top $height
+  z-index 1
+  color white
+  //background-color none
+  > *
+    position absolute
+  .percent
+    top 100px
+    left 100px
+//canvas
+//  border 1px solid black
